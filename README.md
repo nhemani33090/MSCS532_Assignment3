@@ -46,23 +46,23 @@ This project implements and analyzes two key algorithms:
 - **Randomized Quicksort**:
   - Uses a randomly chosen pivot, which reduces the likelihood of poor splits and achieves better performance on average.
   - **Time Complexity**:
-    - Best Case: \(O(n \log n)\)
-    - Average Case: \(O(n \log n)\)
-    - Worst Case: \(O(n^2)\), though this is rare due to the randomness in pivot selection.
+    - Best Case: `O(n log n)`
+    - Average Case: `O(n \log n)`
+    - Worst Case: `O(n^2)`, though this is rare due to the randomness in pivot selection.
 
 - **Deterministic Quicksort**:
   - Uses a fixed pivot (e.g., the first or last element), which makes it more prone to poor splits when the input is sorted or nearly sorted.
   - **Time Complexity**:
-    - Best Case: \(O(n \log n)\)
-    - Average Case: \(O(n \log n)\)
-    - Worst Case: \(O(n^2)\), when the pivot consistently results in unbalanced partitions.
+    - Best Case: `O(n log n)`
+    - Average Case: `O(n log n)`
+    - Worst Case: `O(n^2)`, when the pivot consistently results in unbalanced partitions.
 
 ### **Hash Table with Chaining**
 - Handles collisions by maintaining chains (linked lists) for each bucket.
 - **Time Complexity** (on average):
-  - Search: \(O(1)\)
-  - Insert: \(O(1)\)
-  - Delete: \(O(1)\)
+  - Search: `O(1)`
+  - Insert: `O(1)`
+  - Delete: `O(1)`
 - The hash table dynamically resizes when the load factor exceeds 0.75, ensuring high efficiency even as it grows.
 
 ---
